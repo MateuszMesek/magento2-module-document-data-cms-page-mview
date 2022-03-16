@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="MateuszMesek\DocumentDataIndexerMview\Command\GetNodeSubscriptionsByDocument\ResolverPool">
+        <arguments>
+            <argument name="documents" xsi:type="array">
+                <item name="cms_page" xsi:type="string">MateuszMesek\DocumentDataCmsPageMview\Command\GetNodeSubscriptionsByDocument\CompositeResolver</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="MateuszMesek\DocumentDataCmsPageMview\Command\GetNodeSubscriptionsByDocument\CompositeResolver" type="MateuszMesek\DocumentDataIndexerMview\Command\GetNodeSubscriptionsByDocument\CompositeResolver">
+        <arguments>
+            <argument name="resolvers" xsi:type="array">
+                <item name="config" xsi:type="string">MateuszMesek\DocumentDataCmsPageMview\Command\GetNodeSubscriptionsByDocument\Config</item>
+                <item name="store" xsi:type="string">MateuszMesek\DocumentDataCmsPageMview\NodeSubscription\SubscriptionResolver</item>
+            </argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="MateuszMesek\DocumentDataCmsPageMview\Command\GetNodeSubscriptionsByDocument\Config" type="MateuszMesek\DocumentDataIndexerMview\Command\GetNodeSubscriptionsByDocument\ConfigResolver">
+        <arguments>
+            <argument name="documentName" xsi:type="string">cms_page</argument>
+        </arguments>
+    </virtualType>
+</config>
