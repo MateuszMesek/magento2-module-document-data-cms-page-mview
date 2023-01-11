@@ -1,13 +1,13 @@
 <?xml version="1.0" ?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <virtualType name="MateuszMesek\DocumentDataCmsPageMview\SubscriptionProvider\Composite" type="MateuszMesek\DocumentDataIndexMview\SubscriptionProvider\Composite">
+    <virtualType name="MateuszMesek\DocumentDataCmsPageMview\Model\SubscriptionProvider\Composite" type="MateuszMesek\DocumentDataIndexMview\Model\SubscriptionProvider\Composite">
         <arguments>
             <argument name="providers" xsi:type="array">
-                <item name="attribute" xsi:type="string">MateuszMesek\DocumentDataCmsPageMview\SubscriptionProvider</item>
+                <item name="attribute" xsi:type="string">MateuszMesek\DocumentDataCmsPageMview\Model\SubscriptionProvider</item>
             </argument>
         </arguments>
     </virtualType>
-    <virtualType name="MateuszMesek\DocumentDataCmsPageMview\Action" type="MateuszMesek\DocumentDataIndexMview\Action">
+    <virtualType name="MateuszMesek\DocumentDataCmsPageMview\Model\Action" type="MateuszMesek\DocumentDataIndexMview\Model\Action">
         <arguments>
             <argument name="documentName" xsi:type="string">cms_page</argument>
         </arguments>

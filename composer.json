@@ -3,10 +3,12 @@
     "description": "N/A",
     "type": "magento2-module",
     "require": {
+        "php": ">=8.1",
         "magento/framework": "*",
         "magento/module-cms": "*",
-        "mateuszmesek-magento2/module-document-data-cms-page-indexer": "*",
-        "mateuszmesek-magento2/module-document-data-index-mview": "*"
+        "magento/module-store": "*",
+        "mateuszmesek-magento2/module-document-data-cms-page-indexer": "^1.0",
+        "mateuszmesek-magento2/module-document-data-index-mview": "^1.0"
     },
     "license": [
         "MIT"
@@ -16,7 +18,7 @@
             "registration.php"
         ],
         "psr-4": {
-            "MateuszMesek\\DocumentDataCmsPageMview\\": "src"
+            "MateuszMesek\\DocumentDataCmsPageMview\\": ""
         }
     }
 }

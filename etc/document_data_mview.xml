@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="urn:magento:module:MateuszMesek_DocumentDataIndexMview:etc/document_data_mview.xsd">
     <document name="cms_page">
-        <action name="MateuszMesek\DocumentDataCmsPageMview\Action"/>
-        <subscriptionProvider name="MateuszMesek\DocumentDataCmsPageMview\SubscriptionProvider\Composite"/>
+        <action name="MateuszMesek\DocumentDataCmsPageMview\Model\Action"/>
+        <subscriptionProvider name="MateuszMesek\DocumentDataCmsPageMview\Model\SubscriptionProvider\Composite"/>
     </document>
 </config>

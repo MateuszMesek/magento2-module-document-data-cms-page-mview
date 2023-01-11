@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace MateuszMesek\DocumentDataCmsPageMview;
+namespace MateuszMesek\DocumentDataCmsPageMview\Model;
 
-use MateuszMesek\DocumentDataCmsPageMview\SubscriptionProvider\Generator;
-use MateuszMesek\DocumentDataIndexMviewApi\SubscriptionProviderInterface;
+use MateuszMesek\DocumentDataCmsPageMview\Model\SubscriptionProvider\Generator;
+use MateuszMesek\DocumentDataIndexMviewApi\Model\SubscriptionProviderInterface;
 use Traversable;
 
 class SubscriptionProvider implements SubscriptionProviderInterface
