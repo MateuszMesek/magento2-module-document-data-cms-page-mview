@@ -1,12 +1,12 @@
 <?php declare(strict_types=1);
 
-namespace MateuszMesek\DocumentDataCmsPageMview\Model;
+namespace MateuszMesek\DocumentDataCmsPageMview\Model\SubscriptionProvider;
 
-use MateuszMesek\DocumentDataCmsPageMview\Model\SubscriptionProvider\Generator;
+use MateuszMesek\DocumentDataCmsPageMview\Model\SubscriptionProvider\General\Generator;
 use MateuszMesek\DocumentDataIndexMviewApi\Model\SubscriptionProviderInterface;
 use Traversable;
 
-class SubscriptionProvider implements SubscriptionProviderInterface
+class General implements SubscriptionProviderInterface
 {
     public function get(array $context): Traversable
     {

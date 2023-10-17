@@ -3,7 +3,7 @@
     <virtualType name="MateuszMesek\DocumentDataCmsPageMview\Model\SubscriptionProvider\Composite" type="MateuszMesek\DocumentDataIndexMview\Model\SubscriptionProvider\Composite">
         <arguments>
             <argument name="providers" xsi:type="array">
-                <item name="attribute" xsi:type="string">MateuszMesek\DocumentDataCmsPageMview\Model\SubscriptionProvider</item>
+                <item name="general" xsi:type="string">MateuszMesek\DocumentDataCmsPageMview\Model\SubscriptionProvider\General</item>
             </argument>
         </arguments>
     </virtualType>
